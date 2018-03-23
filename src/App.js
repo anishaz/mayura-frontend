@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 // local
-import Posts from './components/posts';
+import Post from './components/post';
 
 class App extends Component {
   render() {
     return (
       <div className="app">
-       <Posts /> 
+       <Post /> 
       </div>
     );
   }

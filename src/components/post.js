@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Posts extends Component {
+class Post extends Component {
 
     constructor() {
         super();
@@ -27,8 +27,10 @@ class Posts extends Component {
                     .keys(posts)
                     .map(key => 
                     <div key={ key } index = { key } className="post">
-                        <h2>{posts[key].title.rendered}</h2>
-                            <p>{posts[key].content.rendered}</p>
+                        <div className="post-title">
+                            <h2>{posts[key].title.rendered}</h2>
+                        </div>
+                        <div className="post-content" dangerouslySetInnerHTML={{ __html: posts[key].content.rendered }} />
                     </div>
                 )}
                 </div>
@@ -37,4 +39,4 @@ class Posts extends Component {
 }
 
 
-export default Posts;
+export default Post;
