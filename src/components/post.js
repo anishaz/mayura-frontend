@@ -10,7 +10,9 @@ class Post extends Component {
     }
 
     componentDidMount() {
-        let dataURL = client('local');
+        // Replace with client('local')
+        // for local dev setup
+        let dataURL = client();
         let fetchForThisComponent = `${dataURL}posts`;
         fetch(fetchForThisComponent)
             .then(res => res.json())
