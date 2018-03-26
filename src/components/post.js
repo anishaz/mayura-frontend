@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import client from '../client';
 class Post extends Component {
 
     constructor() {
@@ -8,10 +8,11 @@ class Post extends Component {
             posts: []
         }
     }
-    
+
     componentDidMount() {
-        let dataURL = "http://mayura-server:8888/wp-json/wp/v2/posts";
-        fetch(dataURL)
+        let dataURL = client('local');
+        let fetchForThisComponent = `${dataURL}posts`;
+        fetch(fetchForThisComponent)
             .then(res => res.json())
             .then(res => {
                 this.setState({
@@ -19,6 +20,7 @@ class Post extends Component {
                 })
             })
     }
+
     render() {
         let { posts } = this.state;
         return (
@@ -26,7 +28,7 @@ class Post extends Component {
                 {Object
                     .keys(posts)
                     .map(key => 
-                    <div key={ key } index = { key } className="post">
+                    <div key={ key } className={`post post-${key}`}>
                         <div className="post-title">
                             <h2>{posts[key].title.rendered}</h2>
                         </div>
