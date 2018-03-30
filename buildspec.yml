@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install -g yarn
+      - yarn install
+  pre_build:
+    commands:
+       - cd src
+  build:
+    commands:
+      - yarn build
+      # - command
+  post_build:
+    commands:
+      # - command
+artifacts:
+  files:
+    - 'build/**/*'
+    # - location
+  # discard-paths: yes
+  #base-directory: 
