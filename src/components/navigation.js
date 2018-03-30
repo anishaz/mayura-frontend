@@ -1,10 +1,10 @@
 import React from 'react';
+import NavItem from './navitem';
 
-const Nav = () => (
-    <div className="navigation">
-        Welcome to the Navigation!
-        {/* <NavItem>{this.children}</NavItem> */}
-    </div>
+const Nav = ({ props, children }) => (
+    <ul className="navigation">
+       <NavItem>{children}</NavItem>
+    </ul>
 )
 
 export default Nav;
