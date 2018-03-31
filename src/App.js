@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 // local
-import Post from './components/post';
+import Header from './components/header';
+import Footer from './components/footer';
 import Homepage from './pages/homepage';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="app">
-       <h1>Mayura Dance</h1>
-        <h3>Latest Posts</h3>
-        <Post />
-        <Homepage /> 
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="app">
+    <Header />
+    <Switch>
+      <Route exact path="/" component={Homepage} />
+    </Switch>
+    <Footer />
+  </div>
+);
 
 export default App;
