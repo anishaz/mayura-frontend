@@ -8,11 +8,21 @@ import NavLink from '../components/navlink';
 
 
 class InsidePage extends React.Component {
-  render() {
+  constructor() {
+    super();
+    this.pathNamePurify = this.pathNamePurify.bind(this);
+  }
+
+  pathNamePurify() {
     const location = this.props.location.pathname.substring(1).replace('-', ' ');
+    return location;
+  }
+
+
+  render() {
     return (
       <div className="about-us">
-        <h1 className="page-title">{ location } </h1>
+        <h1 className="page-title">{ this.pathNamePurify() }</h1>
         <Nav>
           <NavItem>
             <NavLink link="/">Home</NavLink>
