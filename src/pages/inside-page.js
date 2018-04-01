@@ -38,8 +38,7 @@ class InsidePage extends React.Component {
 }
 
 InsidePage.propTypes = {
-  location: PropTypes.string.isRequired,
-  pathname: PropTypes.string.isRequired,
+  location: PropTypes.object.isRequired, // eslint-disable-line
 };
 
 export default InsidePage;
