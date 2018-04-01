@@ -1,10 +1,14 @@
 import React from 'react';
-import NavItem from './navitem';
+import PropTypes from 'prop-types';
 
-const Nav = ({ props, children }) => (
+const Nav = props => (
   <ul className="navigation">
-    <NavItem>{children}</NavItem>
+    {props.children}
   </ul>
 );
+
+Nav.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
 export default Nav;
