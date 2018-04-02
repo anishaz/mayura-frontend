@@ -1,4 +1,5 @@
 import React from 'react';
+import './social.css';
 
 const SocialMedia = () => (
   <div className="socialMedia">

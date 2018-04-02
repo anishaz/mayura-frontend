@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+body {
+	background: url('/images/footerFloral.png') repeat-x left bottom #282828;
+	line-height: 1.5em;
+	padding-bottom: 55px;
 }
 
-.App { 
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 2em;
+.body {
+  margin-top: -15px; /* pulls content up to account for image */
+	background: url('/images/bg.jpg') repeat-x center top #6c925e;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.slideBg {
+  background: url('/images/slideBg.png') repeat-x 0 170px
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 
 .page-title {
   text-transform: capitalize;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 940px;
+  min-height: 840px;
 }

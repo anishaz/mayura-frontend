@@ -8,7 +8,7 @@ const Nav = props => (
 );
 
 Nav.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.array.isRequired, // eslint-disable-line
 };
 
 export default Nav;

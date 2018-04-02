@@ -6,7 +6,7 @@ const NavItem = props => (
 );
 
 NavItem.propTypes = {
-  children: PropTypes.array.isRequired // eslint-disable-line
+  children: PropTypes.object.isRequired // eslint-disable-line
 };
 
 
