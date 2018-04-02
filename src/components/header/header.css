@@ -4,3 +4,16 @@
     justify-content: space-between;
     padding-top: 15px;
 }
+
+.nav__header {
+    padding-top: 20px;
+}
+.nav__header a {
+    padding: 10px; 
+    font-size: 18px; 
+    color: #c8c8c8; 
+    font-family: Century, "Century Schoolbook", Georgia, serif; 
+}
+.nav__header a:hover, .nav__header .current {
+    color: #8b63bd
+}

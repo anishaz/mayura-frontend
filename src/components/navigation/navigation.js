@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './nav.css';
+
 const Nav = props => (
   <ul className={props.cssClass}>
     {props.children}
