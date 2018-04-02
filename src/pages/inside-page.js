@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// local
-
-
 class InsidePage extends React.Component {
   constructor() {
     super();

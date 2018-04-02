@@ -1,7 +1,8 @@
 body {
 	background: url('/images/footerFloral.png') repeat-x left bottom #282828;
 	line-height: 1.5em;
-	padding-bottom: 55px;
+  padding-bottom: 55px;
+  font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .body {
