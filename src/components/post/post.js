@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import client from '../client';
+import client from '../../client';
 
 class Post extends Component {
   constructor() {
@@ -13,7 +13,7 @@ class Post extends Component {
     // Replace with client('local')
     // for local dev setup
     const dataURL = client('local');
-    const fetchForThisComponent = `${dataURL}posts`;
+    const fetchForThisComponent = `${dataURL}wp/v2/posts`;
     fetch(fetchForThisComponent)
       .then(res => res.json())
       .then((res) => {

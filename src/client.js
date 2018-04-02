@@ -1,7 +1,7 @@
 function client(environment) {
-  let api = 'http://api.mayura.dance/wp-json/wp/v2/';
+  let api = 'http://api.mayura.dance/wp-json/';
   if (environment === 'local') {
-    api = 'http://mayura-server:8888/wp-json/wp/v2/';
+    api = 'http://mayura-server:8888/wp-json/';
   }
   return api;
 }
