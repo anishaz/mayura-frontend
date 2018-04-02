@@ -14,7 +14,7 @@ const Header = () => {
       <Logo />
       <Nav cssClass={headerClass}>
         <NavItem>
-          <NavigationLink link="/" exact="exact">Home</NavigationLink>
+          <NavigationLink link="/" exact>Home</NavigationLink>
         </NavItem>
         <NavItem>
           <NavigationLink link="/about-us">About Us</NavigationLink>

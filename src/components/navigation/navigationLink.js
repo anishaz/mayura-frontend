@@ -7,12 +7,12 @@ const NavigationLink = props => (
 );
 
 NavigationLink.defaultProps = {
-  exact: '',
+  exact: false,
 };
 
 NavigationLink.propTypes = {
   link: PropTypes.string.isRequired,
-  exact: PropTypes.string,
+  exact: PropTypes.bool,
   children: PropTypes.string.isRequired,
 };
 export default NavigationLink;
