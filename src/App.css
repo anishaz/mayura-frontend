@@ -9,7 +9,7 @@ body {
 	background: url('/images/bg.jpg') repeat-x center top #6c925e;
 }
 
-.slideBg {
+.slide-bg {
   background: url('/images/slideBg.png') repeat-x 0 170px
 }
 

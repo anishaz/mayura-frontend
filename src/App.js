@@ -14,7 +14,7 @@ import './App.css';
 
 const App = () => (
   <div className="app body">
-    <div className="slideBg">
+    <div className="slide-bg">
       <div className="wrapper">
         <Header />
         <Switch>
