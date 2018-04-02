@@ -4,3 +4,9 @@
 	background: url('/images/logo.png') no-repeat 0 0;
     text-indent: -999em;
 }
+
+.logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
