@@ -2,7 +2,7 @@ import React from 'react';
 import './social.css';
 
 const SocialMedia = () => (
-  <div className="socialMedia">
+  <div className="social-media">
     <ul>
       <li className="facebook">
         <a href="http://facebook.com/mayuradance">Facebook</a>
