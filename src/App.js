@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 // local
+import client from './client';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import Homepage from './pages/homepage';
@@ -16,6 +17,21 @@ class App extends Component {
   constructor() {
     super();
     this.location = this.location.bind(this);
+    this.state = {
+      items: {},
+    };
+  }
+
+  componentWillMount() {
+    const dataURL = client('local');
+    const fetchForThisComponent = `${dataURL}wp-api-menus/v2/menus/3`;
+    fetch(fetchForThisComponent)
+      .then(res => res.json())
+      .then((res) => {
+        this.setState({
+          items: res.items,
+        });
+      });
   }
 
   location() {
@@ -27,6 +43,7 @@ class App extends Component {
     }
     return this.locationClass;
   }
+
 
   render() {
     const locationClass = this.location();
@@ -43,7 +60,7 @@ class App extends Component {
               <Route exact path="/media" component={InsidePage} />
               <Route exact path="/contact" component={InsidePage} />
             </Switch>
-            <Footer />
+            <Footer items={this.state.items} />
           </div>
         </div>
       </div>

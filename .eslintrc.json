@@ -1,5 +1,9 @@
 {
     "extends": "airbnb",
+    "globals": {
+        "fetch": false,
+        "window": true
+    },
     "rules": {
         "react/prefer-stateless-function": "off",
         "react/jsx-filename-extension": [
