@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Nav from '../navigation/navigation';
 import NavItem from '../navigation/navitem';
 import NavigationLink from '../navigation/navigationLink';
@@ -34,5 +35,14 @@ class Footer extends Component {
     );
   }
 }
+
+
+Footer.propTypes = {
+  items: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array,
+  ]).isRequired,
+};
+
 
 export default Footer;
