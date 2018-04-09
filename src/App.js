@@ -51,7 +51,7 @@ class App extends Component {
       <div className={`app body ${locationClass}`}>
         <div className="slide-bg">
           <div className="wrapper">
-            <Header />
+            <Header items={this.state.items} />
             <Switch>
               <Route exact path="/" component={Homepage} />
               <Route exact path="/about-us" component={InsidePage} />
