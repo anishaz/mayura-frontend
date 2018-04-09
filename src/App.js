@@ -56,8 +56,8 @@ class App extends Component {
               <Route exact path="/" component={Homepage} />
               <Route path="/" component={InsidePage} />
             </Switch>
-            <Footer items={this.state.items} />
           </div>
+          <Footer items={this.state.items} />
         </div>
       </div>
     );
