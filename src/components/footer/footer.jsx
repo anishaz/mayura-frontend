@@ -15,8 +15,10 @@ class Footer extends Component {
         {Object
           .keys(items)
           .map(key => (
-            <NavItem key={key}>
+            <NavItem key={items[key].id}>
               <NavigationLink link={`/${items[key].object_slug}`}>{items[key].title}</NavigationLink>
+              {/* if this particular nav item having children = true,
+              go into the following code: */}
               {items[key].children &&
                 <Nav cssClass={footerSubNav}>
                   {items[key].children.map(subNavItem => (
