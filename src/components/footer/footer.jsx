@@ -44,7 +44,7 @@ class Footer extends Component {
             Located in North Hollywood, CA
           </div>
           <div className="copyright">
-            © Copyright {year} Mayura Dance
+            © Copyright { year } Mayura Dance
           </div>
         </div>
 

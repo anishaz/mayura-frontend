@@ -5,6 +5,7 @@
         "window": true
     },
     "rules": {
+        "object-curly-spacing": [2, "always"],
         "react/prefer-stateless-function": "off",
         "react/jsx-filename-extension": [
             1,

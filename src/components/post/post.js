@@ -28,14 +28,18 @@ class Post extends Component {
     return (
       <div className="posts">
         {Object
-                    .keys(posts)
-                    .map(key =>
-                      (<div key={key} className={`post post-${key}`}>
-                        <div className="post-title">
-                          <h2>{posts[key].title.rendered}</h2>
-                        </div>
-                        <div className="post-content" dangerouslySetInnerHTML={{ __html: posts[key].content.rendered }} />
-                       </div>))}
+          .keys(posts)
+          .map(key =>
+            (<div key={key} className={`post post-${key}`}>
+              <div className="post-title">
+                <h2>{posts[key].title.rendered}</h2>
+              </div>
+              <div
+                className="post-content"
+                dangerouslySetInnerHTML={{ __html: posts[key].content.rendered }}
+              />
+            </div>))
+        }
       </div>
     );
   }

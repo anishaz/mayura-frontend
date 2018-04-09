@@ -17,15 +17,16 @@
 	border-bottom: 1px dotted #555;
 	margin-bottom: 15px;
 	}
+	
 .nav__footer ul, .nav__footer li {margin: 0; padding: 0; list-style: none}
 .nav__footer a{color: #5a7951; font-size: 18px}
-.nav__footer a:hover {color: #7da472}
+.nav__footer a:hover, .nav__footer a.current {color: #7da472}
 .nav__footer li {float: left; width: 205px}
-.nav__footer li#menu-item-74 {width: 100px}
 .nav__footer .subnav__footer {margin: 0; padding: 0; margin: 10px 0 0}
 .nav__footer .subnav__footer li {display: block;}
 .nav__footer .subnav__footer a{font-size: 13px; color: #777;}
-.nav__footer .subnav__footer a:hover {color: #ccc}
+.nav__footer .subnav__footer a:hover,
+.nav__footer .subnav__footer a.current {color: #ccc}
 
 .location, .copyright {color: #777; font-size: 13px; font-style: italic; text-shadow: 1px 1px 1px #111; float: left}
 .location {float: right; margin-right: 15px}
