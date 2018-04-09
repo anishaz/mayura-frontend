@@ -54,11 +54,7 @@ class App extends Component {
             <Header items={this.state.items} />
             <Switch>
               <Route exact path="/" component={Homepage} />
-              <Route exact path="/about-us" component={InsidePage} />
-              <Route exact path="/about-us" component={InsidePage} />
-              <Route exact path="/classes" component={InsidePage} />
-              <Route exact path="/media" component={InsidePage} />
-              <Route exact path="/contact" component={InsidePage} />
+              <Route path="/" component={InsidePage} />
             </Switch>
             <Footer items={this.state.items} />
           </div>
